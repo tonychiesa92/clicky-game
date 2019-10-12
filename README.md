@@ -23,5 +23,5 @@ A simple React app that breaks up the UI into components, manages component stat
 
 
 - - - - - - - - - - - - - - - - - -
-* Here is a link to the deployed version on Heroku. []()
+* Here is a link to the deployed version on Heroku. [https://sportsballcg.herokuapp.com](https://sportsballcg.herokuapp.com)
 
