@@ -22,7 +22,7 @@ class App extends Component {
     this.state.sportsBalls.forEach(sportsBall => {
       sportsBall.count = 0;
     });
-    alert(`Game Over :( \nscore: ${this.state.score}`);
+    alert(`Game Over! Click to play again :( \nscore: ${this.state.score}`);
     this.setState({score: 0});
     return true;
   }
@@ -45,8 +45,9 @@ class App extends Component {
   }
   render() {
     return (
+      <>
+      <Title score={this.state.score} highscore={this.state.highscore}>Sports Ball Clicky Game</Title>
       <Wrapper>
-        <Title score={this.state.score} highscore={this.state.highscore}>Sports Ball Clicky Game</Title>
         {this.state.sportsBalls.map(sportsBall => (
           <BallCard
             clickCount={this.clickCount}
@@ -56,6 +57,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+      </>
     );
   }
 }
